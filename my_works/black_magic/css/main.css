@@ -1,0 +1,802 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    
+}
+a {
+    text-decoration: none;
+}
+#header {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 70px;
+    /*
+    background-image: url(../img/shape.png);
+    background-position-x: right;
+    background-position-y: -140px;*/
+}
+
+#header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(../img/shapes/figure.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 22.34vw;
+    z-index: 1;
+}
+
+
+
+.social_img:hover{
+    filter: invert(39%) sepia(94%) saturate(4454%) hue-rotate(344deg) brightness(118%) contrast(81%);
+}
+
+.menu a{
+    padding-top: 45px;
+    letter-spacing: 2px;
+    color: #959595;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+.menu a:hover{
+    color: #e74242;
+}
+
+.photo__logo {
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size:35em;
+    color: #f8f8f8;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: -2px;
+}
+
+.textWrap {
+    position: relative;
+    margin-top: 295px;
+    z-index: 10;
+}
+
+.wel__text1 {
+    letter-spacing: 1px;
+    color: #9b9b9b;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 300;
+    
+}
+
+.wel__text2 {
+    margin-top: 40px;
+    letter-spacing: 2px;
+    color: #e74242;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.wel__text3 {
+    z-index: 10;;
+    margin-top: 40px;
+    letter-spacing: 1px;
+    color: #9b9b9b;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.feedBack {
+    background-color: #e74242;
+    box-shadow: 0 0 0.8em red;
+    width: 260px;
+    height: 45px;
+    font-size: 15px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    text-shadow: 1px 1px 3px #555555;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-top: 95px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 12px;
+    transition: 0.2s;
+}
+
+.feedBack:hover {
+    background-color: #4e4e4e;
+    box-shadow: 0 0 0.8em black;
+}
+
+.socialIco{
+    margin-top: 105px;
+}
+
+.about {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+.foto {
+    margin-top: 80px;
+}
+.shortBio {
+    color: #4c4c4c;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    font-weight: 400;
+    font-style: italic;
+}
+.shortBio span {
+    color: #e74242;    
+}
+.button2block{
+    background-color: #e74242;
+    box-shadow: 0 0 0.8em red;
+    width: 260px;
+    height: 45px;
+    font-size: 15px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    text-shadow: 1px 1px 3px #555555;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-top: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 12px;
+    transition: 0.2s;
+}
+
+.button2block:hover {
+    background-color: #4e4e4e;
+    box-shadow: 0 0 0.8em black;
+}
+
+#services{
+    padding-top: 55px;
+    padding-bottom: 115px;
+    position: relative;
+}
+
+#services::before{
+    content: '';
+    position: absolute;
+    top: -500px;
+    left: 0;
+    z-index: -1;
+    background-image: url(../img/shapes/fugire2.png);
+    height: 2071px;
+    width: 517px;
+}
+
+#figure{
+    position: absolute;
+    z-index: -1;
+    top: -140px;
+    left: 0;
+}
+#figure_down{
+    position: absolute;
+    z-index: -1;
+}
+.service{
+    margin-top: 40px;
+    font-size: 30px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.service__description{
+    font-size: 15px;
+    color: #4c4c4c;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 75px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.service_card{
+    background-color: #fff;
+    text-align: center;
+    color: #707070;
+    padding-top: 40px;
+    width: 320px;
+    padding-bottom: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 0px 14px -5px rgba(0,0,0,0.75);
+}
+
+.service_card:hover{
+    box-shadow: 0px 0px 14px -5px rgba(238, 51, 51, 0.75);
+}
+
+.service_name{
+    text-transform: uppercase;
+    color: #e74242;
+    letter-spacing: 2px;
+    line-height: 35px;
+    font-size: 20px;
+    font-weight: 800;
+
+}
+
+.service_description, .service_price{
+    margin-top: 36px;
+    line-height: 25px;
+
+}
+
+.service_price {
+    text-transform: uppercase;
+    color: #fff;  
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #e74242;
+    font-weight: 800;
+}
+.marg {
+    margin-top: 85px;
+}
+.order_btn{
+    margin-top: 50px;
+    background-color: #171717;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    border-radius: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    transition: 0.3s;
+}
+
+.order_btn:hover{
+    background-color:#e74242 ;
+    box-shadow: 0px 0px 14px -5px rgba(238, 51, 51, 0.75);
+}
+
+.btn_primary{
+    border: 1px solid red;
+    text-transform: uppercase;
+}
+
+#portfolio {
+    margin-top: 50px;
+}
+
+.portfolio__text{
+    margin-bottom: 50px;
+    
+    font-size: 30px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.port_left {
+    background-color: #000;
+    opacity: 0.25; 
+    box-shadow: 2px 4px 21px -2px rgba(0,0,0,0.75);
+    height: 370px;
+    width: 250px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.port_right {
+    background-color: #111111;
+    box-shadow: 2px 4px 21px -2px rgba(0,0,0,0.75);
+    opacity: 0.25; 
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 370px;
+    width: 250px;
+}
+
+.port_center {
+    height: 390px;
+    width: 585px;
+    box-shadow: 2px 4px 21px -2px rgba(0,0,0,0.75);
+}
+
+.button3block{
+    background-color: #e74242;
+    box-shadow: 0 0 0.8em red;
+    width: 260px;
+    height: 45px;
+    font-size: 15px;
+    color: #fff;
+    position: relative;
+    text-shadow: 1px 1px 3px #555555;
+    z-index: 10;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-top: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 12px;
+    transition: 0.2s;
+}
+
+.button3block:hover {
+    background-color: #4e4e4e;
+    box-shadow: 0 0 0.8em black;
+}
+
+#contacts {
+    margin-top: 60px;
+    position: relative;
+}
+
+.contact_text{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 30px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.contact_second_name {
+    font-size: 25px;
+    font-weight: 500;
+    color: #737373;
+    letter-spacing: 1px;
+}
+
+.contact_telefon {
+    margin-top: 28px;
+    font-size: 20px;
+    color: #e74242;
+    letter-spacing: 2px;
+    font-weight: 800;
+    text-align: center;
+    
+}
+
+.contact_viber {
+    margin-top: 15px;
+    font-size: 10px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.contact_mail {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+form{
+    display: flex;
+    flex-direction:column;
+}
+
+textarea{
+    resize: none;
+}
+  
+
+.socialIcoDown img{
+    text-align: center;
+    margin-top: 27px;
+    width: 28px;
+    height: 28px;
+}
+.socialIco img{
+    text-align: center;
+  
+    width: 28px;
+    height: 28px;
+}
+
+
+
+#button4block{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e74242;
+    box-shadow: 0 0 0.8em red;
+    width: 260px;
+    height: 45px;
+    font-size: 15px;
+    text-shadow: 1px 1px 3px #555555;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-top: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    margin: 40px auto;
+    transition: 0.2s;
+}
+
+#button4block:hover {
+    background-color: #4e4e4e;
+    box-shadow: 0 0 0.8em black;
+}
+
+#slider{
+    display: flex;
+    position: relative;
+}
+
+#slider__left_btn,
+#slider__right_btn{
+    position: absolute;
+    top:50%;
+}
+
+#slider__left_btn{
+    transform: translate(50%,-50%);
+    left: 0;
+}
+
+#slider__right_btn{
+    transform: translate(-50%,-50%);
+    right: 0;
+}
+
+
+#footer {
+    background-color: #eeeeee;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+#footer::before{
+    content: '';
+    position: absolute;
+    bottom:0;
+    right:0;
+    background-image: url(../img/shapes/figure3.png);
+    width: 600px;
+    height: 1100px;
+}
+
+#lineTextName,
+#lineTextTelefon,
+#lineTextUser{
+    border:none;
+    background-color: #f9f9f9;
+    margin-top: 8px;
+    font-size: 15px;
+    color: #555555;
+    text-align: center;
+    width: 388px;
+    height: 35px;
+    padding: 5px;
+}
+
+#lineTextName:focus{
+    outline-style: solid;
+  outline-color: red;
+}
+
+#lineTextTelefon:focus{
+    outline-style: solid;
+  outline-color: red;
+}
+
+#lineTextUser:focus{
+    outline-style: solid;
+  outline-color: red;
+}
+
+
+
+#lineTextUser {
+    height: 111px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.textFooter{
+    width:100%;
+    overflow: hidden;
+}
+
+.textFooter p {
+    font-size: 12px;
+    color: #555555;
+    font-weight: 600;
+}
+.wel__text3__mob {
+    display: none;
+}
+.mob_1_im {
+    display: none;
+}
+.shortBio_mob {
+    display: none;
+}
+.service__description_mob{
+    display: none;
+}
+/**********************************************************/
+@media (min-width: 320px) and (max-width: 600px){
+ 
+    .menu {
+        display: none;
+    }
+    #figure_down{
+        display: none;
+    }
+    #figure {
+        display: none;
+    }
+    .menu_mob {
+        margin-top: 10px;
+        background-color: #fff;
+        box-shadow: 0px 2px 12px -5px rgba(0,0,0,0.75);
+        height: 35px;
+        width: 190px;
+        border-radius: 30px;
+    }
+    .menu_mob_line {
+        align-items: center;
+    }
+    .col__1{
+        margin-top: 18px;
+        background-color: #e74242;
+        height: 2px;
+        width: 26px;  
+    }
+    .col__2{
+        background-color: #e74242;
+        height: 2px;
+        width: 26px; 
+        margin-top: 3px;
+    }
+    .col__3{
+        background-color: #e74242;
+        height: 2px;
+        width: 26px; 
+        margin-top: 3px;
+    }
+#header {
+    background-image: none;
+    background-color: #f7f7f7;
+    margin-top: -24px;
+    z-index: -1;
+    margin-bottom: -46px;
+}
+#about {
+    
+    background-color: #fff;
+    box-shadow: 0 -5px 5px -5px #333;
+    border-radius: 60px 0 0 0;
+}
+    .photo__logo {
+        top: 39%;
+        font-size: 13em;
+        color: #f2f2f2;
+    }
+
+    .wel__text1 {
+        margin-top: -195px;
+        color: #000;
+        text-align: left;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .wel__text2 {
+        margin-top: 15px;
+        font-size: 18px;
+        text-align: left;
+        letter-spacing: 1px;
+    }
+    .wel__text3 {
+        
+        display: none;
+    }
+    .wel__text3__mob{
+        margin-top: 15px;
+        display: block;
+        text-align: left;
+        font-size: 10px;
+        letter-spacing: 0.5px;
+        color: #b6b6b6;
+       
+    }
+    .feedBack {
+        font-size: 12px;
+        width: 230px;
+        height: 40px;
+        margin-top: -35px;
+    }
+    
+    .button2block {
+        font-size: 12px;
+        width: 230px;
+        height: 40px;
+        margin-top: -35px;
+    }
+    .button2block:hover{
+        background-color: #4e4e4e;
+       box-shadow: 0 0 0.8em black;
+    }
+
+    .mob .row {
+        align-items: left;
+    }
+    .port_center {
+        display: none;
+    }
+
+    #lineTextName {
+        width: 300px;
+    }
+
+    #lineTextTelefon {
+        width: 300px;
+    }
+
+    #lineTextUser {
+        width: 300px;
+    }
+
+    .contact_mail {
+        font-size: 15px;
+    }
+
+    .socialIco {
+        margin-top: 36px;
+    }
+
+    .mouse_link {
+        display: none;
+    }
+
+    .about{
+        
+        margin-top: 30px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+
+.foto {
+    margin-top: 30px;
+    height: 160px;
+    width: 160px;;
+
+    }
+
+    .shortBio {
+        display: none;
+      }
+      
+      .shortBio_mob {
+          display: block;
+          color: #4c4c4c;
+          text-align: center;
+          margin-top: 1px;
+          font-size: 15px;
+          letter-spacing: 0px;
+          line-height: 24px;
+          font-weight: 400;
+          font-style: italic;
+      }
+      .service {   
+          margin-top: 30px;
+          text-align: center;
+          font-size: 20px;
+      }
+.shortBio_mob span {
+    color: #e74242;    
+}
+#slider__right_btn {
+    display: none;
+}
+
+#slider__left_btn {
+    display: none;
+}
+    .button2block {
+        margin-top: 45px;
+    }
+.service__description {
+    display: none;
+}
+.service__description_mob{
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    color: #aaaaaa;
+    letter-spacing: 0;
+    text-transform: none;
+    }
+    .service_card {
+        margin-top: 50px;
+        border-radius: 0 40px 40px 0;
+        margin-right: 4%;
+        width: 300vh;
+    }
+    #portfolio {
+        margin-top: -120px;
+    }
+
+    .port_right {
+        display: none;
+    }
+
+    .contact_second_name {
+        text-align: center;
+    }
+
+    .button4block {
+        margin-top:55px;
+    }
+    .portfolio__text {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 20px;
+    }
+
+  .button3block {
+    font-size: 12px;
+    width: 230px;
+    height: 40px;
+  }
+  .contact_text {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .contact_second_name{
+      text-align: center;
+      font-size: 20px;
+      font-weight: 400;
+  }
+  #button4block {
+    font-size: 12px;
+    width: 230px;
+    height: 40px;
+  }
+  .textFooter {
+      text-align: center;
+  }
