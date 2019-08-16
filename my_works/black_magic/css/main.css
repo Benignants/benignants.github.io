@@ -524,6 +524,7 @@ textarea{
 .textFooter{
     width:100%;
     overflow: hidden;
+    position: relative;
 }
 
 .textFooter p {
@@ -531,6 +532,7 @@ textarea{
     color: #555555;
     font-weight: 600;
 }
+
 .wel__text3__mob {
     display: none;
 }
