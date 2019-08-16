@@ -6,10 +6,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    /*exp
-    font-size: 10px;
-    */
-    
 }
 a {
     text-decoration: none;
@@ -32,8 +28,6 @@ a {
     width: 429px;
     z-index: 1;
 }
-
-
 
 .social_img:hover{
     filter: invert(39%) sepia(94%) saturate(4454%) hue-rotate(344deg) brightness(118%) contrast(81%);
@@ -430,8 +424,6 @@ textarea{
     height: 28px;
 }
 
-
-
 #button4block{
     font-family: 'Montserrat', sans-serif;
     background-color: #e74242;
@@ -524,8 +516,6 @@ textarea{
   outline-color: red;
 }
 
-
-
 #lineTextUser {
     height: 111px;
     font-family: 'Montserrat', sans-serif;
@@ -560,19 +550,86 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
     and (orientation : landscape){
     #header::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-image: url(../img/shapes/figure.png);
-    background-repeat: no-repeat;
-    height: 1000px;
-    width: 260px;
-    z-index: 1;
+     display: none;
     }
-        #portfolio{
-            display:none;
-        }
+
+    #portfolio{
+    display:none;
+    }
+
+    .photo__logo{
+        font-size: 25rem;
+    }
+    
+    .menu a{
+        padding-top: 40px;
+    }
+
+    .textWrap{
+        margin-top: 250px;
+    }
+
+    .wel__text2{
+        font-size: 35px;
+    }
+
+    #services::before{
+        display: none;
+    }
+
+    .service_card{
+        width:300px;
+    }
+
+    #footer::before{
+        display: none;
+    }
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait){
+    #header::before{
+        display: none;
+    }
+   
+    #portfolio{
+       display:none;
+    }
+   
+    .photo__logo{
+        font-size: 25rem;
+    }
+       
+    .menu a{
+        padding-top: 40px;
+    }
+   
+    .textWrap{
+        margin-top: 250px;
+    }
+   
+    .wel__text2{
+        font-size: 35px;
+    }
+   
+    #services::before{
+        display: none;
+    }
+   
+    .service_card{
+        width:100%;
+        margin-top: 10px;
+    }
+
+    .service__description{
+        text-align: center;
+    }
+   
+    #footer::before{
+           display: none;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 600px){
